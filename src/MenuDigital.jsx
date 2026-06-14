@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Phone, X } from 'lucide-react';
 import logoImg from './assets/la popular-LOGO.png';
+import carousel1 from './assets/carousel-1.jpg';
+import carousel2 from './assets/carousel-2.jpg';
+import carousel3 from './assets/carousel-3.jpg';
+import carousel4 from './assets/carousel-4.jpg';
+import carousel5 from './assets/carousel-5.jpg';
+import carousel6 from './assets/carousel-6.jpg';
 
 // Custom SVG icons for social media (not available in lucide-react)
 const FacebookIcon = ({ size = 32 }) => (
@@ -27,12 +33,7 @@ const MenuDigital = () => {
 
   // Carrusel de 6 imágenes a pantalla completa
   const carouselImages = [
-    "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1535338454770-8b1859fc8e7e?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1582169505937-b9992bd01ed9?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1626074964464-f655bd51ef34?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=800&auto=format&fit=crop"
+    carousel1, carousel2, carousel3, carousel4, carousel5, carousel6
   ];
   
   const [currentSlide, setCurrentSlide] = useState(0);
